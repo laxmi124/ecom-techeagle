@@ -18,7 +18,7 @@ const SignUp = () => {
   const handleSignUp = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/register",
+        "https://ecom-techeagle.onrender.com/api/register",
         formData
       );
       navigate("/login");

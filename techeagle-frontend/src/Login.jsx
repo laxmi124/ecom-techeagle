@@ -13,7 +13,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/login",
+        "https://ecom-techeagle.onrender.com/api/login",
         formData
       );
       navigate("/customer/dashboard");

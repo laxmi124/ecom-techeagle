@@ -77,7 +77,7 @@ app.post("/api/register", async (req, res) => {
     }
 
     // Check if the provided role is valid
-    if (!["Customer", "Manager"].includes(role)) {
+    if (!["customer", "manager"].includes(role)) {
       return res.status(400).json({ error: "Invalid user role" });
     }
 
